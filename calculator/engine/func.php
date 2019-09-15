@@ -11,6 +11,11 @@ function scanDir4Files($dir) {
     return $fileList;
 }
 
+/**
+ * Функция-калькулятор. Принимает на вход две числовые и тип арифметического действия.
+ * Проводит вычисления в зависимости от типа арифметического действия. Делить на нуль
+ * нельзя
+ */
 function calculateThis($num1, $num2, $action) {
     switch ($action) {
         case "minus":
@@ -27,6 +32,8 @@ function calculateThis($num1, $num2, $action) {
     }
 }
 
+
+// Вызов функции калькулятора
 $num1 = $_POST['num1'];
 $num2 = $_POST['num2'];
 $act = $_POST['action'];

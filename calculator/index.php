@@ -1,9 +1,4 @@
-<?php
-include ("./engine/func.php");
-
-
-
-?>
+<?php include ("./engine/func.php"); ?>
 
 <!DOCTYPE html>
 <html lang="en">
