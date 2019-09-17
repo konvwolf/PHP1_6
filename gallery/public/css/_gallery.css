@@ -1,0 +1,81 @@
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    padding: 1% .5%;
+    box-sizing: border-box;
+
+}
+
+.galleryPic {
+    width: calc(25% - 20px);
+}
+
+.galleryPic img {
+    width: 100%;
+    transition: .5s;
+}
+
+.gallery img:hover {
+    cursor: pointer;
+}
+
+.picName {
+    position: relative;
+    font-family: Roboto, sans-serif;
+    font-size: 1.3em;
+    font-weight: 600;
+    text-shadow: 0 0 2px black;
+    color: yellow;
+    bottom: 10%;
+    left: 5%;
+    pointer-events: none;
+}
+
+.picViews {
+    position: relative;
+    font-family: Roboto, sans-serif;
+    font-size: 1.3em;
+    font-weight: 600;
+    text-shadow: 0 0 2px black;
+    color: red;
+    top: -90%;
+    left: 5%;
+    pointer-events: none;
+}
+
+.modalWindow {
+    display: none;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    animation: fade-in .2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    cursor: pointer;
+}
+
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+.modalImage {
+    position: relative;
+    border: 20px solid white;
+    background-color: white;
+    border-radius: 10px;
+    left: 50%;
+    top: 50%;
+    width: 60%;
+    box-sizing: border-box;
+}
+
+.modalImage img {
+    width: 100%;
+}
