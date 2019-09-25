@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteBase /
+DirectoryIndex index.php
+Options +FollowSymlinks
+RewriteRule ^product/(.*)$ /index.php?productHURL=$1 [L]
+RewriteRule ^product /index.php?productHURL=$1 [L]
